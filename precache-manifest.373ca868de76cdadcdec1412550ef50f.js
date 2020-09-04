@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "524451e0d4d2e03ccb8254f35693f14c",
+    "revision": "1d2f69f4d4016ec12c94bf6482eecd5f",
     "url": "/truth-or-lie-game/index.html"
   },
   {
-    "revision": "14f9abdf29ce723888f1",
+    "revision": "5993f166e80ec41ecdb0",
     "url": "/truth-or-lie-game/static/css/main.5f361e03.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/truth-or-lie-game/static/js/2.7bb990ee.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "14f9abdf29ce723888f1",
-    "url": "/truth-or-lie-game/static/js/main.890fbb16.chunk.js"
+    "revision": "5993f166e80ec41ecdb0",
+    "url": "/truth-or-lie-game/static/js/main.71f0915c.chunk.js"
   },
   {
     "revision": "1a749c8dc388a5c0ed47",
