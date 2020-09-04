@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      Truth or Lie game coming soon....
+      Truth or Lie game coming soon....!
     </div>
   );
 }
