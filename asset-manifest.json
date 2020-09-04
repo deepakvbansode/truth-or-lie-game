@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/truth-or-lie-game/static/css/main.5f361e03.chunk.css",
+    "main.js": "/truth-or-lie-game/static/js/main.890fbb16.chunk.js",
+    "main.js.map": "/truth-or-lie-game/static/js/main.890fbb16.chunk.js.map",
+    "runtime-main.js": "/truth-or-lie-game/static/js/runtime-main.b8d13418.js",
+    "runtime-main.js.map": "/truth-or-lie-game/static/js/runtime-main.b8d13418.js.map",
+    "static/js/2.7bb990ee.chunk.js": "/truth-or-lie-game/static/js/2.7bb990ee.chunk.js",
+    "static/js/2.7bb990ee.chunk.js.map": "/truth-or-lie-game/static/js/2.7bb990ee.chunk.js.map",
+    "index.html": "/truth-or-lie-game/index.html",
+    "precache-manifest.90fd0bb86bd8839952eea32889535edb.js": "/truth-or-lie-game/precache-manifest.90fd0bb86bd8839952eea32889535edb.js",
+    "service-worker.js": "/truth-or-lie-game/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/truth-or-lie-game/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.7bb990ee.chunk.js.LICENSE.txt": "/truth-or-lie-game/static/js/2.7bb990ee.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b8d13418.js",
+    "static/js/2.7bb990ee.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.890fbb16.chunk.js"
+  ]
+}
