@@ -1,8 +1,8 @@
 import React from "react";
 import { Table } from 'reactstrap';
 export const Player = ({ players }) => {
-  return (
     
+  return (
       <Table striped>
         <thead>
           <tr>

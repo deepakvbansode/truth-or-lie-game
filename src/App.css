@@ -14,3 +14,7 @@ input[type="radio"] {
 .progress-wrapper {
   margin-top: 10px;
 }
+.game-over {
+  text-align: center;
+  color: blue;
+}

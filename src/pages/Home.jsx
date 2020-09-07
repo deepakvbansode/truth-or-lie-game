@@ -17,6 +17,8 @@ export class Home extends Component {
       playerId,
       playerInfo: null,
       currentPlayer: null,
+      resultDeclare: false,
+
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -36,7 +38,8 @@ export class Home extends Component {
         snapshot.forEach((snap) => {
           statements.push(snap.val());
         });
-        this.setState({ statements });
+        let resultDeclare = statements.some((statement)=>statement.isLie)
+        this.setState({ statements, resultDeclare });
       });
       db.ref("currentPlayer").on("value", (snapshot) => {
         const currentPlayer = snapshot.val();
@@ -114,14 +117,30 @@ export class Home extends Component {
       guess,
       playerInfo,
       currentPlayer,
+      resultDeclare
     } = this.state;
+    let alertColor = "";
+    let alertMessage = "";
+    if(resultDeclare){
+        const correctStatement = statements.find((statement) => statement.isLie)
+        if(guess == correctStatement.id){
+            alertColor="success";
+            alertMessage="Great.....you guessed it!"
+        } else {
+            alertColor="danger";
+            alertMessage="Better luck next time!"
+        }
+    }
     return (
       <div>
         <Jumbotron>
           {playerId ? (
             <div className="player-wrapper">
               {statements.length === 0 && <div>Game will begin soon...</div>}
-              <Alert color="success">Great...you guessed it!</Alert>
+              {
+                  resultDeclare && 
+                        <Alert color={alertColor}>{alertMessage}</Alert>
+              }
               {currentPlayer && (
                 <>
                   <p>{currentPlayer.name}'s lie is:</p>

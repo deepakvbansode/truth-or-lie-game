@@ -62,6 +62,7 @@ export class Admin extends Component {
             }
           }
         });
+        players = players.sort((player1, player2) => parseInt(player2.totalCorrectGuess) - parseInt(player1.totalCorrectGuess) )
         this.setState({
           players,
           statement1Guess,
@@ -193,6 +194,7 @@ export class Admin extends Component {
       statement1Guess,
       statement2Guess,
       statement3Guess,
+      playedPlayerIds
     } = this.state;
     const totalPlayers = players.length - 1;
     const statement1Percentage =
@@ -201,6 +203,7 @@ export class Admin extends Component {
       totalPlayers > 0 ? (100 * parseInt(statement2Guess)) / totalPlayers : 0;
     const statement3Percentage =
       totalPlayers > 0 ? (100 * parseInt(statement3Guess)) / totalPlayers : 0;
+    const gameOver = players.length > 0 && players.length == Object.keys(playedPlayerIds).length;
     return (
       <div>
         <Jumbotron className="admin-wrapper">
@@ -323,7 +326,7 @@ export class Admin extends Component {
                   </Button>
                 )}
               </>
-            ) : (
+            ) : gameOver ? <div className="game-over">Game Over</div> :(
               <Button
                 color="primary"
                 size="lg"
