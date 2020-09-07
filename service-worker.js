@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/truth-or-lie-game/precache-manifest.bf01b64b8718ee0a1c5eccaacc302514.js"
+  "/truth-or-lie-game/precache-manifest.3a037c564949d4414106d421e03e3667.js"
 );
 
 self.addEventListener('message', (event) => {

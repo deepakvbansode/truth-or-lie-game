@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e21b1e406221f4c9f4a694b3d6870458",
+    "revision": "3b8443afcb83bcaf79f6eb05b0ba2e9e",
     "url": "/truth-or-lie-game/index.html"
   },
   {
-    "revision": "70db258e1ed15c471084",
+    "revision": "1287de0a4e2ec780a846",
     "url": "/truth-or-lie-game/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "6480a37ccaf03c7e8ac8",
+    "revision": "f11fc997a4a9d4d8e05e",
     "url": "/truth-or-lie-game/static/css/main.b5fde9c4.chunk.css"
   },
   {
-    "revision": "70db258e1ed15c471084",
-    "url": "/truth-or-lie-game/static/js/2.b81f5eb6.chunk.js"
+    "revision": "1287de0a4e2ec780a846",
+    "url": "/truth-or-lie-game/static/js/2.9820200b.chunk.js"
   },
   {
     "revision": "7bfaa32b315fe466d84ab2ae49052d17",
-    "url": "/truth-or-lie-game/static/js/2.b81f5eb6.chunk.js.LICENSE.txt"
+    "url": "/truth-or-lie-game/static/js/2.9820200b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6480a37ccaf03c7e8ac8",
-    "url": "/truth-or-lie-game/static/js/main.a9e4e84e.chunk.js"
+    "revision": "f11fc997a4a9d4d8e05e",
+    "url": "/truth-or-lie-game/static/js/main.97440e11.chunk.js"
   },
   {
     "revision": "1a749c8dc388a5c0ed47",

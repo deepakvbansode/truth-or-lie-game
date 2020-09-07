@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/truth-or-lie-game/static/css/main.b5fde9c4.chunk.css",
-    "main.js": "/truth-or-lie-game/static/js/main.a9e4e84e.chunk.js",
-    "main.js.map": "/truth-or-lie-game/static/js/main.a9e4e84e.chunk.js.map",
+    "main.js": "/truth-or-lie-game/static/js/main.97440e11.chunk.js",
+    "main.js.map": "/truth-or-lie-game/static/js/main.97440e11.chunk.js.map",
     "runtime-main.js": "/truth-or-lie-game/static/js/runtime-main.b8d13418.js",
     "runtime-main.js.map": "/truth-or-lie-game/static/js/runtime-main.b8d13418.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/truth-or-lie-game/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.b81f5eb6.chunk.js": "/truth-or-lie-game/static/js/2.b81f5eb6.chunk.js",
-    "static/js/2.b81f5eb6.chunk.js.map": "/truth-or-lie-game/static/js/2.b81f5eb6.chunk.js.map",
+    "static/js/2.9820200b.chunk.js": "/truth-or-lie-game/static/js/2.9820200b.chunk.js",
+    "static/js/2.9820200b.chunk.js.map": "/truth-or-lie-game/static/js/2.9820200b.chunk.js.map",
     "index.html": "/truth-or-lie-game/index.html",
-    "precache-manifest.bf01b64b8718ee0a1c5eccaacc302514.js": "/truth-or-lie-game/precache-manifest.bf01b64b8718ee0a1c5eccaacc302514.js",
+    "precache-manifest.3a037c564949d4414106d421e03e3667.js": "/truth-or-lie-game/precache-manifest.3a037c564949d4414106d421e03e3667.js",
     "service-worker.js": "/truth-or-lie-game/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/truth-or-lie-game/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.b5fde9c4.chunk.css.map": "/truth-or-lie-game/static/css/main.b5fde9c4.chunk.css.map",
-    "static/js/2.b81f5eb6.chunk.js.LICENSE.txt": "/truth-or-lie-game/static/js/2.b81f5eb6.chunk.js.LICENSE.txt"
+    "static/js/2.9820200b.chunk.js.LICENSE.txt": "/truth-or-lie-game/static/js/2.9820200b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b8d13418.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.b81f5eb6.chunk.js",
+    "static/js/2.9820200b.chunk.js",
     "static/css/main.b5fde9c4.chunk.css",
-    "static/js/main.a9e4e84e.chunk.js"
+    "static/js/main.97440e11.chunk.js"
   ]
 }
