@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 import { db } from "../services/firebase";
-import { Jumbotron, Alert, Button, ListGroup, ListGroupItem } from "reactstrap";
+import {
+  Jumbotron,
+  Alert,
+  Button,
+  ListGroup,
+  ListGroupItem,
+  Label,
+  FormGroup,
+  Input,
+} from "reactstrap";
 
 const PLAYER_NAME = "player-name";
 
@@ -18,7 +27,6 @@ export class Home extends Component {
       playerInfo: null,
       currentPlayer: null,
       resultDeclare: false,
-
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -38,7 +46,7 @@ export class Home extends Component {
         snapshot.forEach((snap) => {
           statements.push(snap.val());
         });
-        let resultDeclare = statements.some((statement)=>statement.isLie)
+        let resultDeclare = statements.some((statement) => statement.isLie);
         this.setState({ statements, resultDeclare });
       });
       db.ref("currentPlayer").on("value", (snapshot) => {
@@ -117,19 +125,19 @@ export class Home extends Component {
       guess,
       playerInfo,
       currentPlayer,
-      resultDeclare
+      resultDeclare,
     } = this.state;
     let alertColor = "";
     let alertMessage = "";
-    if(resultDeclare){
-        const correctStatement = statements.find((statement) => statement.isLie)
-        if(guess == correctStatement.id){
-            alertColor="success";
-            alertMessage="Great.....you guessed it!"
-        } else {
-            alertColor="danger";
-            alertMessage="Better luck next time!"
-        }
+    if (resultDeclare) {
+      const correctStatement = statements.find((statement) => statement.isLie);
+      if (guess == correctStatement.id) {
+        alertColor = "success";
+        alertMessage = "Great.....you guessed it!";
+      } else {
+        alertColor = "danger";
+        alertMessage = "Better luck next time!";
+      }
     }
     return (
       <div>
@@ -137,10 +145,9 @@ export class Home extends Component {
           {playerId ? (
             <div className="player-wrapper">
               {statements.length === 0 && <div>Game will begin soon...</div>}
-              {
-                  resultDeclare && 
-                        <Alert color={alertColor}>{alertMessage}</Alert>
-              }
+              {resultDeclare && (
+                <Alert color={alertColor}>{alertMessage}</Alert>
+              )}
               {currentPlayer && (
                 <>
                   <p>{currentPlayer.name}'s lie is:</p>
@@ -177,7 +184,7 @@ export class Home extends Component {
               )}
               {currentPlayer && currentPlayer.playerId == playerId ? (
                 <div>You cannot guess...these are your statements</div>
-              ) : (
+              ) : statements.length != 0 &&  (
                 <Button
                   color="primary"
                   size="lg"
@@ -185,16 +192,28 @@ export class Home extends Component {
                   onClick={this.submitGuess}
                   disabled={playerInfo ? playerInfo.lockedGuess : false}
                 >
-                  Submit Guess
+                    {playerInfo && playerInfo.lockedGuess ? `Your guess is submitted` : `Submit Guess`}
+                  
                 </Button>
               )}
             </div>
           ) : (
             <form onSubmit={this.handleSubmit}>
-              <input onChange={this.handleChange} value={playerName}></input>
+              <FormGroup>
+                <Label for="userName">What is your good name?</Label>
+                <Input
+                  type="text"
+                  name="name"
+                  id="userName"
+                  placeholder="Name"
+                  onChange={this.handleChange}
+                  value={playerName}
+                />
+              </FormGroup>
+
               {error ? <p>{writeError}</p> : null}
 
-              <Button color="primary" size="lg" active type="submit">
+              <Button color="primary" size="lg" active type="submit" disabled={!playerName}>
                 Start Playing
               </Button>
             </form>
