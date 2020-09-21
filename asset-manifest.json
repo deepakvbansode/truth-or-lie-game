@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/truth-or-lie-game/static/css/main.d4b0b205.chunk.css",
-    "main.js": "/truth-or-lie-game/static/js/main.89a23642.chunk.js",
-    "main.js.map": "/truth-or-lie-game/static/js/main.89a23642.chunk.js.map",
+    "main.css": "/truth-or-lie-game/static/css/main.48ef6622.chunk.css",
+    "main.js": "/truth-or-lie-game/static/js/main.79d77567.chunk.js",
+    "main.js.map": "/truth-or-lie-game/static/js/main.79d77567.chunk.js.map",
     "runtime-main.js": "/truth-or-lie-game/static/js/runtime-main.b8d13418.js",
     "runtime-main.js.map": "/truth-or-lie-game/static/js/runtime-main.b8d13418.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/truth-or-lie-game/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.27178cb2.chunk.js": "/truth-or-lie-game/static/js/2.27178cb2.chunk.js",
     "static/js/2.27178cb2.chunk.js.map": "/truth-or-lie-game/static/js/2.27178cb2.chunk.js.map",
     "index.html": "/truth-or-lie-game/index.html",
-    "precache-manifest.25c522f3ca9a96305fefe56a427c9c06.js": "/truth-or-lie-game/precache-manifest.25c522f3ca9a96305fefe56a427c9c06.js",
+    "precache-manifest.58654d8440ce86de5b863843be771926.js": "/truth-or-lie-game/precache-manifest.58654d8440ce86de5b863843be771926.js",
     "service-worker.js": "/truth-or-lie-game/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/truth-or-lie-game/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.d4b0b205.chunk.css.map": "/truth-or-lie-game/static/css/main.d4b0b205.chunk.css.map",
+    "static/css/main.48ef6622.chunk.css.map": "/truth-or-lie-game/static/css/main.48ef6622.chunk.css.map",
     "static/js/2.27178cb2.chunk.js.LICENSE.txt": "/truth-or-lie-game/static/js/2.27178cb2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b8d13418.js",
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.27178cb2.chunk.js",
-    "static/css/main.d4b0b205.chunk.css",
-    "static/js/main.89a23642.chunk.js"
+    "static/css/main.48ef6622.chunk.css",
+    "static/js/main.79d77567.chunk.js"
   ]
 }
